@@ -1,10 +1,5 @@
 # Advent of Code - Day 1, Part 2
 
-def equal_or_not(a, b):
-    if a is b:
-        return true
-    return false
-
 def input():
     return "29917128875332952564321392569634257121244516819997569284938677239676779378"\
             "82215832354983281441259781765124411785177125743867456725414655941952841146"\
@@ -39,12 +34,12 @@ def input():
 def main(input):
     length = len(input)
     position = 0
-    halfwayround=len(input)/2
+    halfwayround=length/2
     result = 0
     for i in range(0, length):
-        if position+1 == length:
+        if position+1 is length:
             break
-        if halfwayround == length:
+        if halfwayround is length:
             halfwayround = 0
         if input[i] is input[halfwayround]:
             result = result + int(input[i])
