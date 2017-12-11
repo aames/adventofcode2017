@@ -13,6 +13,7 @@ def find_divisible_values(values):
     """
     Given a list of integers, find the evenly divisible pair
     return them as a tuple: min, max
+    return False if none divide evenly (this would be an error case)
     """
     for value in values:
         if evenly_divisible(value[0],value[1]):
