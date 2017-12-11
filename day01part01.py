@@ -35,7 +35,7 @@ def main(input):
     length = len(input)
     position = 0
     result = 0
-    if (input[0] is input[len(input)-1]):
+    if (input[0] is input[length-1]):
         result = int(input[0])
     for i in range(0, length):
         if position+1 is length:
